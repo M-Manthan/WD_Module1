@@ -1,0 +1,23 @@
+body{
+    background-color: skyblue;
+}
+div
+{
+    border-radius: 50%;
+    animation: animateball 30s linear infinite;
+    
+}
+img{
+    width: 800px;
+    height: 500px;
+}
+@keyframes animateball
+{
+    0%{
+        transform: translate(0px, 0px);
+    } 
+    100%{
+        transform: translate(1000px, 20px);
+    } 
+
+}

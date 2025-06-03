@@ -1,0 +1,74 @@
+body {
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 20px;
+}
+
+#wall {
+    background-color: yellow;
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    top: 60px;
+}
+
+#door {
+    background-color: brown;
+    width: 150px;
+    height: 300px;
+    position: absolute;
+    bottom: -40; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#door-knob {
+    width: 15px;
+    height: 15px;
+    background-color: gold;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px; /* Example positioning - adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#leftwindow, #rightwindow {
+    width: 120px;
+    height: 120px;
+    background-color: lightblue;
+    border: 5px solid black;
+    position: absolute;
+    top: 120px; /* Push windows down */
+}
+
+#leftwindow { left: 80px; }
+#rightwindow { right: 80px; }
+
+#roof {
+    width: 0;
+    height: 0;
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+    border-bottom: 200px solid red;
+    position: absolute;
+    top: -150px;
+}
+
+#sun {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    border-radius: 50%;
+    position: absolute;
+    top: -120px;
+    right: -100px;
+    box-shadow: 0 0 50px orange;
+}
